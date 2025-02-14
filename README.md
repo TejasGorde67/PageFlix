@@ -1,2 +1,0 @@
-# PageFlix
-Repository for PageFlix
