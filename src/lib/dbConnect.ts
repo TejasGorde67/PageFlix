@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config(); // This will load the environment variables from the .env file
+
 import mongoose from 'mongoose';
 
 type ConnectionObject = {
@@ -13,7 +16,7 @@ async function dbConnect(): Promise<void> {
   }
 
   try {
-    const db = await mongoose.connect(process.env.MONGO_ATLAS_URL as string, {});
+    const db = await mongoose.connect(process.env.MONGODB_URL as string, {});
     connection.isConnected = db.connections[0].readyState;
 
     console.log('Database connected successfully');
