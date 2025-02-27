@@ -37,25 +37,12 @@ const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         <Link href={"/"}>
           <div className="flex items-center gap-2">
-            <div className="relative size-8">
-              <motion.div
-                className="absolute inset-0 rounded bg-primary"
-                animate={{
-                  rotate: [0, 10, 0],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-              <img
-                src="/logo.png"
-                alt="P Logo"
-                className="absolute inset-0 flex items-center justify-center w-12 h-9"
-              />
-            </div>
-            <span className="text-xl font-bold">PAGEFLIX</span>
+            <span
+              className="text-4xl font-extrabold tracking-widest text-red-600 drop-shadow-lg uppercase inline-block"
+              style={{ transform: "perspective(500px) rotateX(25deg)" }}
+            >
+              PAGEFLIX
+            </span>
           </div>
         </Link>
         <div className="flex items-center gap-4 max-sm:gap-3">
