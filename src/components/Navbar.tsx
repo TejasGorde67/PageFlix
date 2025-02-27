@@ -45,6 +45,7 @@ const Navbar = () => {
             </span>
           </div>
         </Link>
+
         <div className="flex items-center gap-4 max-sm:gap-3">
           <Button variant="ghost" size="icon" onClick={toggleDarkMode}>
             {isDarkMode ? (
@@ -53,8 +54,19 @@ const Navbar = () => {
               <LuSunMoon className="size-5" />
             )}
           </Button>
-          <Button onClick={handleSignin}>SignIn</Button>
-          <Button onClick={handleAuthLogic}>Add Book</Button>
+
+          <Button
+            onClick={handleSignin}
+            className="bg-red-600 hover:bg-red-700 text-white"
+          >
+            Sign In
+          </Button>
+          <Button
+            onClick={handleAuthLogic}
+            className="bg-red-600 hover:bg-red-700 text-white"
+          >
+            Add Book
+          </Button>
         </div>
       </div>
     </header>
