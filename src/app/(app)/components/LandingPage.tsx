@@ -29,7 +29,7 @@ const LandingPage = () => {
           className="flex flex-col items-center gap-8 text-center"
         >
           <h2 className="mb-10 text-center text-4xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500 drop-shadow-lg">
-            " Read Books for Free "
+            &ldquo; Read Books for Free &rdquo;
           </h2>
 
           <h1 className="bg-gradient-to-r from-neutral-900 to-neutral-600 bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-6xl lg:text-7xl dark:from-neutral-50 dark:to-neutral-300 max-lg:px-4">
