@@ -64,7 +64,7 @@ export interface BookModel extends Document {
     coverImage: string;
     file: string;
     author: string;
-    creator?: Types.ObjectId;
+    creator: Types.ObjectId; // Remove the optional marker since it's required in schema
     reviews?: Types.ObjectId[];
 }
 
